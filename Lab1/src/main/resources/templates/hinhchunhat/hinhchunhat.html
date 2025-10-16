@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Tính Hình Chữ Nhật</title>
+</head>
+<body>
+	<h2>Tính diện tích và chu vi hình chữ nhật</h2>
+	<form action="/hinhchunhat/tinh" method="post">
+		<label>Chiều dài: </label> <input type="number" name="chieudai"
+			step="0.1" required><br> <br> <label>Chiều rộng: </label> 
+			<input type="number" name="chieurong" step="0.1" required><br>
+		<br>
+		<button type="submit">Tính</button>
+	</form>
+
+	<p>
+		Diện tích: <span th:text="${chieudai}"></span> * <span th:text="${chieurong}"></span> = <span th:text="${dientich}"></span>
+	</p>
+	<p>
+		Chu vi: (<span th:text="${chieudai}"></span> + <span th:text="${chieurong}"></span>) * 2 = <span th:text="${chuvi}"></span>
+	</p>
+
+
+</body>
+</html>

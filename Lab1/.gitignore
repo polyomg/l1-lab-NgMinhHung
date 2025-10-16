@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+/target/
+.idea/
+*.iml
+*.class
+=======
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -31,3 +37,4 @@ build/
 
 ### VS Code ###
 .vscode/
+>>>>>>> b8c1a3d (Hoàn thành Lab 1)
